@@ -1,0 +1,281 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: grey;
+}
+.attribution a {
+  color: grey;
+}
+
+/* */
+
+/* VARIABLES */
+
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: rgba(141, 89, 89, 0.2) 0 0 1px;
+}
+
+body {
+  background-color: white;
+  font-family: 'Spartan', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin: 2%;
+}
+
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+  gap: 10rem;
+  max-width: 111rem;
+}
+
+.left_top {
+  width: 50%;
+}
+
+.left_top h1 {
+  color: var(--dark-magenta);
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+}
+
+.left_top p {
+  margin-top: 4%;
+  color: var(--dark-grayish-magenta);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.right_top h3 {
+  color: var(--dark-magenta);
+}
+
+.stars {
+  margin-right: 2.5rem;
+}
+
+.r1,
+.r2,
+.r3 {
+  background-color: var(--light-grayish-magenta);
+  height: 5rem;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.r2 {
+  margin-left: 5rem;
+}
+
+.r3 {
+  margin-left: 10rem;
+}
+
+#bottom {
+  height: 23vh;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  max-width: 114rem;
+  padding: 1%;
+  margin-top: -10rem;
+}
+
+.cards {
+  background-color: var(--dark-magenta);
+  border-radius: 1rem;
+  padding: 3%;
+  height: 23rem;
+}
+
+.cards img {
+  width: 4.2rem;
+  height: auto;
+  border-radius: 3rem;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 25px;
+}
+
+.card_header h1 {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.card_header span {
+  color: var(--soft-pink);
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.cards p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+}
+
+.card1 {
+  align-self: flex-start;
+}
+
+.card2 {
+  align-self: center;
+}
+
+.card3 {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    background-color: white;
+    font-family: 'Spartan', sans-serif;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 4%;
+  }
+
+  #top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    max-width: auto;
+  }
+
+  .left_top {
+    width: 100%;
+  }
+
+  .left_top h1 {
+    color: var(--dark-magenta);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .left_top p {
+    margin-top: 4%;
+    color: var(--dark-grayish-magenta);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .stars {
+    margin-right: 0;
+  }
+
+  #bottom {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    max-width: 100%;
+    padding: 1%;
+    margin-top: 0;
+  }
+
+  .cards {
+    background-color: var(--dark-magenta);
+    border-radius: 1rem;
+    padding: 8%;
+    height: 23rem;
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .r1,
+  .r2,
+  .r3 {
+    background-color: var(--light-grayish-magenta);
+    height: 5rem;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+  }
+
+  .r2 {
+    margin-left: 0;
+  }
+
+  .r3 {
+    margin-left: 0;
+  }
+}
